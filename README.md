@@ -32,4 +32,26 @@ The robot follows a smooth, spline-generated trajectory in **Gazebo** and visual
 
 ---
 
+### 📂 File Descriptions
+
+| **File** | **Description** |
+|-----------|-----------------|
+| **`path.py`** | Generates a smooth trajectory from discrete waypoints using a **Natural Cubic Spline**. The resulting `(x, y)` points are saved to a CSV file for the controller to follow. |
+| **`path_marker.py`** | Publishes **visual markers** of the trajectory in **RViz**, allowing you to see the generated spline path for verification and visualization. |
+| **`bot_pid.py`** | Implements the **PID-based trajectory tracking controller**. It subscribes to `/odom` for robot pose, computes velocity commands, and publishes them to `/cmd_vel` to make the robot follow the path. |
+| **`gazebo.launch.py`** | Launches the **Gazebo simulation environment** along with the robot model and necessary ROS2 nodes (e.g., controller and visualization tools). This file automates the full simulation setup. |
+
+---
+
+### ⚙️ Setup Instructions
+
+**System Requirements**
+- Ubuntu 22.04 LTS  
+- ROS2 Humble (or later)  
+- Python 3.10+  
+- Packages:  
+  ```bash
+  sudo apt install ros-humble-rviz2 ros-humble-gazebo-ros ros-humble-turtlebot3
+  pip install numpy matplotlib pandas
+
 > 🚀 *Developed by Pranav P as part of a robotics assignment on path smoothing and trajectory tracking.*
