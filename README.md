@@ -1,4 +1,4 @@
-# 🤖 ROS2 Trajectory Tracking
+#  ROS2 Trajectory Tracking
 
 A ROS2-based project that demonstrates **path smoothing** and **PID-based trajectory tracking** for a differential drive robot.  
 The robot follows a smooth, spline-generated trajectory in **Gazebo** and visualizes its motion in **RViz**.
@@ -14,7 +14,7 @@ The robot follows a smooth, spline-generated trajectory in **Gazebo** and visual
 
 ---
 
-### 📸 Simulation Preview
+###  Simulation Result
 <img width="755" height="423" alt="image" src="https://github.com/user-attachments/assets/295caf43-93b4-4b46-bc23-56a09679a8e5" />
 
 
